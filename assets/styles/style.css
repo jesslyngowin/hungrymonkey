@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+}
+.piz-img{
+    width: 100%;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    
+    font-size: 2vw;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: inline;
+}
+
+footer {
+    padding: 40px;
+    color: white;
+    background-color:rgba(248, 19, 19, 0.839);
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar {
+    font-size: 18px;
+    background-color: rgba(248, 19, 19, 0.839);
+    padding: 25px 20px 25px 20px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 250px;
+}
+.main-nav {
+    list-style-type: none;
+}
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+
+
+.pizza, .pasta{
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+}
+
+
+.text-center{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.menu-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; 
+}
+.menu-img-cont {
+    text-align: center;
+    width: 30%; 
+    padding: 15px;
+    margin: 15px;
+    
+    min-width: 180px;
+    min-height: 180px;
+
+    overflow: hidden;
+    position: relative;
+}
+.menu-img-cont img{
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease-in-out;
+}
+.menu-img-cont:hover .overlay {
+    opacity: 1;
+}
+.overlay p {
+    color: white;
+    margin: 0;
+}
+
+.padd{
+    padding: 20px 150px 20px 150px;
+}
+
+.article-padd{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contacts{
+    background-color: rgba(248, 19, 19, 0.839);
+    color: #fff;
+}
+.socmed img{
+    padding: 10px;
+}
+
+
+.profile{
+    display: flex;
+    justify-content: center;
+}
+
+figure img{
+    width: 30%;
+    border-radius: 15%;
+}
+
+.gmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+}
+
+.gmap iframe {
+    width: 60%;
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .padd{
+        padding: 20px 30px 20px 30px;
+    }
+    .centered p{
+        font-size: 12px;
+    }
+    .menu-img-cont{
+        width: 100%;
+    }
+    figure img{
+        min-width: 200px;
+    }
+    .navbar{
+        font-size: 15px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
